@@ -13,10 +13,13 @@
   <body>
 
     <div class="container">
-      <h1>Enter your city below, and we'll tell you what bikes were stolen in that city in the past week!</h1>
+      <h1>Enter your desired date and city below, and we'll tell you what bikes were stolen in that city since that date!</h1>
 
       <form id="userInput">
         <div class="form-group">
+
+          <input id="user_time" type="date" name="user_time" value="2016-05-25">
+
           <label for="cityInput">City</label>
           <input type="text" class="form-control" id="cityInput" required>
         </div>
