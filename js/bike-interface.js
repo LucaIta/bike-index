@@ -7,6 +7,11 @@ Bike = function(name, serial, thumb, year, date_stolen) {
     this.thumb = thumb;
   }
 
-  this.year = year;
+  if (year === null) {
+    this.year = "Not Available";
+  } else {
+    this.year = year;
+  }
+
   this.date_stolen = date_stolen;
 };

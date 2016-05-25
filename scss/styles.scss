@@ -19,9 +19,11 @@ img {
 
 #userInput {
   border: 3px solid $black;
+  border-radius: 10px;
   padding: 30px 50px;
   background: $blue;
   .btn {
+    border-radius: 100px;
     width: 200px;
     height: 80px;
     font-size: 18pt;

@@ -27,7 +27,7 @@ $(document).ready(function(){
                                 "<br>" + "Serial#: " + bike.serial +
                                 "<br> <img src=" + bike.thumb + ">"  +
                                 "<br>" + "Year: " + bike.year +
-                                "<br>" + "Stolen Date: " + bike.date_stolen +
+                                "<br>" + "Stolen Date: " + moment.unix(bike.date_stolen).format("dddd, MMMM Do YYYY, h:mm a") +
                                 "</div>");
 
 
