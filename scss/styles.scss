@@ -1,15 +1,44 @@
-$blue : #89CFF0;
 $red : #F06560;
 
 body {
-  background: $blue;
+  font-family: 'Carme', sans-serif;
+  background: black;
+  color: $red;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.output {
+  font-size: 36pt;
 }
 
 #userInput {
   border: 3px solid black;
+  padding: 30px 50px;
   background: $red;
+  .btn {
+    width: 200px;
+    height: 80px;
+    font-size: 18pt;
+  }
 }
 
-.output {
+#cityInput {
+  font-size: 18pt;
+  text-align: center;
+}
+
+.bikeBox {
+  padding-top: 20px;
+  font-size: 18pt;
+  border: 3px solid $red;
+  height: 550px;
+}
+
+.loadingImage {
   display: none;
 }
