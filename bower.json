@@ -1,9 +1,9 @@
 {
-  "name": "alarmclock",
+  "name": "js-project-template",
   "description": "",
   "main": "index.js",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/AdamCraig/js-project-template",
   "ignore": [
     "**/.*",
     "node_modules",
