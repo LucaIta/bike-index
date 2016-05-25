@@ -1,9 +1,10 @@
-$red : #F06560;
+$blue : #96b3d2;
+$black: #141414;
 
 body {
   font-family: 'Carme', sans-serif;
-  background: black;
-  color: $red;
+  background: $black;
+  color: $blue;
   text-align: center;
 }
 
@@ -17,9 +18,9 @@ img {
 }
 
 #userInput {
-  border: 3px solid black;
+  border: 3px solid $black;
   padding: 30px 50px;
-  background: $red;
+  background: $blue;
   .btn {
     width: 200px;
     height: 80px;
@@ -35,7 +36,7 @@ img {
 .bikeBox {
   padding-top: 20px;
   font-size: 18pt;
-  border: 3px solid $red;
+  border: 3px solid $blue;
   height: 550px;
 }
 

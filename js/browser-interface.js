@@ -23,21 +23,13 @@ $(document).ready(function(){
       });
 
       bikes.forEach(function(bike) {
-        if (bike.thumb) {
           $('.bikeList').append("<div class='col-md-4 bikeBox'>" + "Name: " + bike.name +
                                 "<br>" + "Serial#: " + bike.serial +
                                 "<br> <img src=" + bike.thumb + ">"  +
                                 "<br>" + "Year: " + bike.year +
                                 "<br>" + "Stolen Date: " + bike.date_stolen +
                                 "</div>");
-        } else {
-          $('.bikeList').append("<div class='col-md-4 bikeBox'>" + "Name: " + bike.name +
-                                "<br>" + "Serial #: " + bike.serial +
-                                "<br> <img src='img/bike.png'>" +
-                                "<br>" + "Year: " + bike.year +
-                                "<br>" + "Stolen Date: " + bike.date_stolen +
-                                "</div>");
-        }
+
 
 
       });
