@@ -1,0 +1,11 @@
+$blue : #89CFF0;
+$red : #F06560;
+
+body {
+  background: $blue;
+}
+
+#userInput {
+  border: 3px solid black;
+  background: $red;
+}

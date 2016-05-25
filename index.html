@@ -2,12 +2,30 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+    <script src="bower_components/moment/min/moment.min.js"></script>
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
+
+    <div class="container">
+      <h1>Enter your city and Stolen After date in the form below, and we'll tell you what bikes were stolen in that city after that date!</h1>
+      <h2>Poor, poor bikes :(</h2>
+
+      <form id="userInput">
+        <div class="form-group">
+          <label for="cityInput">City</label>
+          <input type="text" class="form-control" id="cityInput" required>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+
+    <div class="output">
+    </div>
 
   </body>
 </html>
