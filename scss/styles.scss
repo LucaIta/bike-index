@@ -1,4 +1,4 @@
-$blue : #96b3d2;
+$blue : #86c5da;
 $black: #141414;
 $red: #ED4337;
 
@@ -29,6 +29,12 @@ img {
     height: 80px;
     font-size: 18pt;
   }
+
+  p {
+    color: black;
+    font-size: 18pt;
+    margin-bottom: -12px;
+  }
 }
 
 #user_time {
@@ -48,7 +54,8 @@ img {
 .bikeBox {
   padding-top: 20px;
   font-size: 18pt;
-  border: 3px solid $blue;
+  border: 3px inset $blue;
+  border-radius: 5px;
   height: 550px;
 }
 
