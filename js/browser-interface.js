@@ -6,7 +6,6 @@ var bike = require('../js/bike.js');
 var displayer = function(bikes) {
   console.log(bikes.length);
   if (bikes.length > 0) {
-    // if (bikes[0].stolen_location.indexOf(city) > -1) { // this is the working one
     if (bikes[0].stolen_location.indexOf(bike.getCity(city)) > -1) {
       $('.output').text("Here's a list of all bikes reported stolen in " + city + " since " + user_time + ":");
 
