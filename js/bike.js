@@ -2,9 +2,11 @@ var bikes = [];
 var test = "Test";
 
 
-Bike = function(name, serial, thumb, year, date_stolen) {
+Bike = function(name, serial, thumb, year, date_stolen, stolen_location
+) {
   this.name = name;
   this.serial = serial;
+  this.stolen_location = stolen_location;
 
   if (thumb === null) {
     this.thumb = "img/bike.png";
@@ -29,7 +31,7 @@ exports.getResponseAndDisplay = function(city, date_stolen, displayer) {
     $('.loadingImage').hide();
     console.log(response);
     response.bikes.forEach(function(bike) {
-      var newBike = new Bike(bike.frame_model, bike.serial, bike.thumb, bike.year, bike.date_stolen);
+      var newBike = new Bike(bike.frame_model, bike.serial, bike.thumb, bike.year, bike.date_stolen, bike.stolen_location);
       bikes.push(newBike);
     });
 
@@ -37,3 +39,9 @@ exports.getResponseAndDisplay = function(city, date_stolen, displayer) {
 
   });
 };
+
+exports.getCity = function(address) {
+  arrayOfWOrds = address.split(",");
+  city = arrayOfWOrds[0];
+  return city;
+}
