@@ -25,7 +25,7 @@ var lib = require('bower-files')({
 
 gulp.task('concatInterface', function(){
   return gulp.src(['./js/*-interface.js'])
-    .pipe(concat('allconcat.js'))
+    .pipe(concat('allConcat.js'))
     .pipe(gulp.dest('./tmp'));
 });
 

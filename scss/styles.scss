@@ -1,5 +1,6 @@
 $blue : #96b3d2;
 $black: #141414;
+$red: #ED4337;
 
 body {
   font-family: 'Carme', sans-serif;
@@ -53,4 +54,7 @@ img {
 
 .loadingImage {
   display: none;
+  h2 {
+    color: $red;
+  }
 }
