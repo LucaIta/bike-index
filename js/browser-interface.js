@@ -1,7 +1,20 @@
 var city;
 var user_time;
 var unixUser_time;
-getResponseAndDisplay = require('../js/bike.js').getResponseAndDisplay;
+var bike = require('../js/bike.js');
+
+var displayer = function(bikes) {
+  $('.output').text("Here's a list of all bikes reported stolen in " + city + " since " + user_time + ":");
+
+  bikes.forEach(function(bike) {
+    $('.bikeList').append("<div class='col-md-4 bikeBox'>" + "Name: " + bike.name +
+    "<br>" + "Serial#: " + bike.serial +
+    "<br> <img src=" + bike.thumb + ">"  +
+    "<br>" + "Year: " + bike.year +
+    "<br>" + "Stolen Date: " + moment.unix(bike.date_stolen).format("dddd, MMMM Do YYYY, h:mm a") +
+    "</div>");
+  });
+};
 
 $(document).ready(function(){
   $('#userInput').submit(function(event){
@@ -14,20 +27,6 @@ $(document).ready(function(){
     $('.loadingImage').show();
     $('.bikeList').empty();
     $('.output').empty();
-    getResponseAndDisplay(city, unixUser_time);
+    bike.getResponseAndDisplay(city, unixUser_time, displayer);
   });
 });
-
-exports.displayer = function(bikes) {
-
-  $('.output').text("Here's a list of all bikes reported stolen in " + city + " since " + user_time + ":");
-
-  bikes.forEach(function(bike) {
-    $('.bikeList').append("<div class='col-md-4 bikeBox'>" + "Name: " + bike.name +
-                          "<br>" + "Serial#: " + bike.serial +
-                          "<br> <img src=" + bike.thumb + ">"  +
-                          "<br>" + "Year: " + bike.year +
-                          "<br>" + "Stolen Date: " + moment.unix(bike.date_stolen).format("dddd, MMMM Do YYYY, h:mm a") +
-                          "</div>");
-  });
-};
