@@ -13,8 +13,18 @@
   <body>
 
     <div class="container">
-      <h1>Enter your desired date and city below, and we'll tell you what bikes were stolen in that city since that date!</h1>
-
+      <div class="instructions">
+        <h1>Enter your desired date and city below, and we'll tell you what bikes were stolen in that city since that date!</h1>
+        <h3>This page retrieves the results from the database offered by <a href="https://bikeindex.org/" target="_blank">bikeindex.org</a>. To get results for a certain city, stolen bikes have to have been registered in their database.</h3>
+        <h3>Cities for which we know you can get results:</h3>
+        <ul>
+          <li>Portland</li>
+          <li>San Francisco</li>
+          <li>Salt Lake City</li>
+          <li>Boston</li>
+          <li>You can check their <a href="https://bikeindex.org/bikes?stolen=true&proximity=null" target="_blank">database</a> to find other cities </li>
+        </ul>
+      </div>
       <form id="userInput">
         <div class="form-group">
 
