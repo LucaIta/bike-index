@@ -7,7 +7,7 @@
 _It allows the user to look for bikes stolen in a certain area by inserting the city and the date from which they want to start searching._
 
 ## Live site
-_The site is reachable at the following address: lucaita.github.io/bike-index
+_The site is reachable at the following address: http://lucaita.github.io/bike-index
 
 ## Known Bugs
 * _no known bugs
